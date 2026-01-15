@@ -56,7 +56,7 @@ function FormComponent({ onSubmit }) {
       form.append('image', image);
 
  // Utilisation de la variable d'environnement pour l'URL de l'ALB
-const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:3000';
 
 const response = await axios.post(`${apiUrl}/api/submit`, form, {
   headers: {
